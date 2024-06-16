@@ -17,6 +17,7 @@ const InputField = ({
   disabled,
   onWheel,
   ariaLabel,
+  inputPad,
 }) => {
   return (
     <div className="">
@@ -43,11 +44,9 @@ const InputField = ({
           id={name}
           name={name}
           placeholder={placeholder}
-          className={`w-full h-10 px-3 py-2 rounded border ${
-            bgColor && bgColor
-          } ${borderColor} ${
-            required ? "border-gray-300" : "border-gray-300"
-          } focus:outline-none focus:${borderColor} ${startIcon ? "pl-8" : ""}`}
+          className={`w-full h-10 ${inputPad ? inputPad : "px-3 py-2"}  rounded border ${bgColor && bgColor
+            } ${borderColor} ${required ? "border-gray-300" : "border-gray-300"
+            } focus:outline-none focus:${borderColor} ${startIcon ? "pl-8" : ""}`}
           required={required}
           aria-label={ariaLabel}
           onChange={onChange}
@@ -57,7 +56,7 @@ const InputField = ({
         />
 
         {endIcon && (
-          <span className="absolute inset-y-0 right-0 pr-3 pt-5 pb-5 flex items-center">
+          <span className="absolute inset-y-0 -right-1 pr-3 pt-5 pb-5 flex items-center">
             {endIcon}
           </span>
         )}

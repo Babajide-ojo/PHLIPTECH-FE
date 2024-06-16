@@ -36,7 +36,7 @@ const footerLinks = [
 const Footer = () => {
   const [subscribeEmail, setSubscribeEmail] = useState("");
   return (
-    <main className="bg-ptDarkBg800 text-white">
+    <main className="bg-ptDarkBg800 text-white mt-56">
       <div className="p-20">
         <div className="flex justify-between items-center">
           <Image src="/logo2.png" alt="logo" height={100} width={200} />
@@ -57,25 +57,22 @@ const Footer = () => {
             {footerLinks.map((item) => (
               <div className="flex flex-col gap-3 text-sm" key={item.header}>
                 <p
-                  className={`${work_sans.className} font-semibold ${
-                    item.header === "Social" && "text-end"
-                  }`}
+                  className={`${work_sans.className} font-semibold ${item.header === "Social" && "text-end"
+                    }`}
                 >
                   {item.header}
                 </p>
                 <Link
                   href={item.fristLink}
-                  className={`font-light ${
-                    item.header === "Social" && "text-end underline"
-                  }`}
+                  className={`font-light ${item.header === "Social" && "text-end underline"
+                    }`}
                 >
                   {item.first}
                 </Link>
                 <Link
                   href={item.secondLink}
-                  className={`font-light ${
-                    item.header === "Social" && "text-end underline"
-                  }`}
+                  className={`font-light ${item.header === "Social" && "text-end underline"
+                    }`}
                 >
                   {item.second}
                 </Link>
