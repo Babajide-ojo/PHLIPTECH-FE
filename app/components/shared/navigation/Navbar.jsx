@@ -16,7 +16,7 @@ const RenderNavItems = ({ name, link }) => {
   return (
     <Link
       href={link}
-      className={`text-lg font-medium ${
+      className={`text-lg font-medium hover:text-ptLightBlue ${
         pathname === link ? "text-ptLightBlue" : "text-ptBlack"
       }`}
     >
