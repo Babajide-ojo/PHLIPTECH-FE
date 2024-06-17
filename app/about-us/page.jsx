@@ -1,5 +1,5 @@
 import Layout from "../components/shared/navigation/Layout";
-import AboutUs from "../components/AboutUs";
+import AboutUs from "../components/pages/AboutUs";
 
 
 const AboutPage = () => {

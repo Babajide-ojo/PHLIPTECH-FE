@@ -7,7 +7,7 @@ export default function AboutUs() {
             <div className='mt-40'>
                 <p className='font-medium'>Who we <i className='text-ptLightBlue'>are ?</i></p>
                 <h1 className='font-medium text-4xl leading-10 text-ptDarkBg900 py-6 mb-3'>About Us</h1>
-                <p className='text-xl leading-10 font-normal text-ptDarkBg600'>
+                <p className='text-xl leading-10 font-normal text-ptNeutral600'>
                     At Philip Tech, our core values shape all our actions and decisions. We prioritize innovation
                     customer satisfaction, excellence, and integrity, ensuring that every step we take aligns with
                     our commitment to these principles.
