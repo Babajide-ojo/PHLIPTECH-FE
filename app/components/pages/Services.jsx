@@ -6,7 +6,7 @@ export default function Services() {
     return (
         <div>
             <div>
-                <p className='font-medium'>Who we <i className='text-ptLightBlue'>do ?</i></p>
+                <p className='font-medium'>What we <i className='text-ptLightBlue'>do ?</i></p>
                 <h1 className='font-medium text-4xl leading-10 text-ptDarkBg900 py-6 mb-3'>Our Services</h1>
             </div>
 
