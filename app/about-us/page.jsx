@@ -3,7 +3,12 @@ import AboutUs from "../components/AboutUs";
 
 
 const AboutPage = () => {
-  return <Layout><AboutUs /></Layout>;
+  return (
+    <Layout>
+      <div className="px-10 mt-24">
+        <AboutUs />
+      </div>
+    </Layout>);
 };
 
 export default AboutPage;

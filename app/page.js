@@ -68,7 +68,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section>
+        <section className="mt-52">
           <AboutUs />
         </section>
       </main>
