@@ -1,7 +1,14 @@
 import Layout from "../components/shared/navigation/Layout";
+import Testimonials from "../components/pages/Testimonals";
 
-const Testimonials = () => {
-  return <Layout>Testimonials</Layout>;
+const TestimonialsPage = () => {
+  return (
+    <Layout>
+      <div className="px-10 mt-24">
+        <Testimonials />
+      </div>
+    </Layout>
+  );
 };
 
-export default Testimonials;
+export default TestimonialsPage;

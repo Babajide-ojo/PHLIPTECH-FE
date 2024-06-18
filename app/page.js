@@ -8,6 +8,8 @@ import InputField from "./components/shared/input/InputField";
 import { useImmer } from "use-immer";
 import AboutUs from "./components/pages/AboutUs";
 import Services from "./components/pages/Services";
+import Testimonials from "./components/pages/Testimonals";
+import ContactUs from "./components/pages/ContactUs";
 
 const almendra_Display = Almendra_Display({ weight: '400', subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ weight: '400', subsets: ["latin"] });
@@ -27,7 +29,7 @@ export default function Home() {
         {/* Hero section */}
         <section className="mb-20 px-10">
           <Image src="/star.png" alt="logo" className="" height={21.36} width={21.36} />
-          <div className={` text-base flex justify-center py-3 px-2 font-normal
+          <div className={`text-base flex justify-center py-3 px-2 font-normal
             leading-4 gap-2 rounded-3xl bg-ptLighterBlue w-1/3 mx-auto`}>
             <p className={`text-ptLightBlue`}>Hello There, we are Philip Technologies</p>
             <Image src="/wave-icon.svg" alt="wave" className="-mt-2" height={26} width={26} />
@@ -117,10 +119,38 @@ export default function Home() {
               </div>
 
               <div className="w-full px-20 ml-20">
-                <Image src="/World-img.png" alt="Star" className="" height={466} width={501} />
+                <Image src="/World-img.png" alt="Earth" className="" height={466} width={501} />
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Featured On */}
+        <section className=" py-36 px-20 bg-ptNeutral50 ">
+          <div>
+            <h1 className="text-4xl font-medium">Featured <i className="text-ptLightBlue400 not-italic">On ?</i></h1>
+            <p className="font-normal leading-8 text-lg text-ptNeutral600 my-5">Check out list of amazing brand we have worked with</p>
+          </div>
+
+          <div className="flex">
+            <Image src="/givadan-brand.png" alt="Givadan" className="" height={62.25} width={195.78} />
+            <Image src="/certina-brand.png" alt="Certina" className="mx-10" height={59.09} width={132.68} />
+            <Image src="/drom-brand.png" alt="Drom" className="" height={52.4} width={141.09} />
+            <Image src="/Google-brand.png" alt="Google" className="mx-10" height={53} width={131} />
+            <Image src="/Amazon-brand.png" alt="Amazon" className="" height={41} width={131} />
+            <Image src="/godaddy-brand.png" alt="Godaddy" className="ml-10 " height={38.83} width={193.77} />
+          </div>
+        </section>
+
+        {/* Testimonal Section */}
+        <section className="mt-16 px-32">
+          <Testimonials />
+        </section>
+
+        {/* Contact Us Section */}
+
+        <section className="my-24 px-20">
+          <ContactUs />
         </section>
       </main>
     </Layout>
