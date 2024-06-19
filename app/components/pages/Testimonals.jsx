@@ -6,13 +6,16 @@ const plusJakarta = Plus_Jakarta_Sans({ weight: '700', subsets: ["latin"] });
 
 
 export default function Testimonials() {
+    const phraseClass = 'leading-5 font-medium text-xl text-ptDarkBg600'
+    const commentClass = 'text-base font-normal text-ptDarkBg500 leading-7 my-5'
+
     return (
         <div>
             <div className='text-ptDarkBg600'>
-                <div className='w-1/3 mx-auto py-3 px-6 text-center bg-ptNeutral100 rounded-3xl font-bold mb-5'>
+                <div className='w-fit mx-auto py-3 px-6 text-center bg-ptNeutral100 rounded-3xl font-bold mb-5 leading-4 text-base'>
                     They already love our work 😍
                 </div>
-                <h1 className='mx-auto text-center text-4xl font-medium'>
+                <h1 className='mx-auto text-center text-4xl font-medium leading-10'>
                     See what our clients say about us
                 </h1>
             </div>
@@ -20,13 +23,13 @@ export default function Testimonials() {
             <div className='py-20'>
                 {/* Row 1 */}
                 <div className="flex justify-between">
-                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl mb-12'>
+                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl h-fit mb-12'>
                         <div className="flex justify-between">
-                            <div className='leading-5 font-medium text-xl text-ptDarkBg600'>“The best hiring app ever”</div>
+                            <div className={`${phraseClass}`}>“The best hiring app ever”</div>
                             <div>⭐⭐⭐⭐⭐</div>
                         </div>
 
-                        <p className='text-base font-normal text-ptDarkBg500 leading-7 my-5'>
+                        <p className={`${commentClass}`}>
                             If you are looking for a reliable and easy-to-use app, look no further!
                             This app has everything you need, and it is made my life so much easier
                         </p>
@@ -43,9 +46,9 @@ export default function Testimonials() {
                         </div>
                     </div>
 
-                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl'>
+                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl h-fit'>
                         <div className="flex justify-between">
-                            <div className='leading-5 font-medium text-xl text-ptDarkBg600'>“Saves me time”</div>
+                            <div className={`${phraseClass}`}>“Saves me time”</div>
                             <div>⭐⭐⭐⭐⭐</div>
                         </div>
 
@@ -70,9 +73,9 @@ export default function Testimonials() {
 
                 {/* Row 2 */}
                 <div className="flex justify-between mt-10">
-                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl mb-6'>
+                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl h-fit mb-6'>
                         <div className="flex justify-between">
-                            <div className='leading-5 font-medium text-xl text-ptDarkBg600'>“Better than the rest”</div>
+                            <div className={`${phraseClass}`}>“Better than the rest”</div>
                             <div>⭐⭐⭐⭐⭐</div>
                         </div>
 
@@ -94,9 +97,9 @@ export default function Testimonials() {
                         </div>
                     </div>
 
-                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl'>
+                    <div className='mx-5 p-4 bg-ptWhite50 w-full shadow-md rounded-2xl h-fit'>
                         <div className="flex justify-between">
-                            <div className='leading-5 font-medium text-xl text-ptDarkBg600'>“No more anxiety”</div>
+                            <div className={`${phraseClass}`}>“No more anxiety”</div>
                             <div>⭐⭐⭐⭐⭐</div>
                         </div>
 

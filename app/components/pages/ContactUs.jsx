@@ -10,7 +10,7 @@ export default function ContactUs() {
                     <div className='relative w-full'>
                         <Image src="/spiral.svg" alt="Star" className="opacity-30 absolute" height={154} width={154} />
                         <div className='pl-16'>
-                            <h1 className='text-4xl pt-20 pb-10  text-ptWhite font-medium leading-10'>
+                            <h1 className='text-4xl pt-20 pb-10 text-ptWhite font-medium leading-10'>
                                 Spend less time worrying about how
                             </h1>
                             <p className='font-normal text-xl leading-8 text-ptWhite w-8/12 mb-6'>
