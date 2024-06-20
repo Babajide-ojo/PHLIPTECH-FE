@@ -16,9 +16,8 @@ const RenderNavItems = ({ name, link }) => {
   return (
     <Link
       href={link}
-      className={`text-lg font-medium hover:text-ptLightBlue ${
-        pathname === link ? "text-ptLightBlue" : "text-ptBlack"
-      }`}
+      className={`text-lg font-medium hover:text-ptLightBlue hidden lg:flex ${pathname === link ? "text-ptLightBlue" : "text-ptBlack"
+        }`}
     >
       {name}
     </Link>
@@ -39,9 +38,13 @@ const Navbar = () => {
         ))}
       </div>
 
-      <button className="py-2 px-10 rounded-lg bg-ptLightBlue text-white">
+      <button className="py-2 px-10 rounded-lg bg-ptLightBlue text-white hidden lg:flex">
         Contact Us
       </button>
+
+      <div className="flex lg:hidden">
+        <Image src="/menu_icon.svg" alt="logo" height={24} width={24} />
+      </div>
     </main>
   );
 };

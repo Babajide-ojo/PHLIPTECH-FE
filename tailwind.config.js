@@ -13,6 +13,7 @@ module.exports = {
         ptLighterBlue: "#E3F3FE",
         ptLightBlue: "#019BFF",
         ptLightBlue400: "#39AAFF",
+        ptLightBlue900: "#004BAD",
         ptBlue: "#17478B",
         ptDarkBlue: "#05199A",
         ptDarkBlue50: "#ECE6F7",
