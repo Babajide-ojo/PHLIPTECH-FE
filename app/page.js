@@ -46,7 +46,7 @@ export default function Home() {
 
           <InputField
             css={`relative my-16 justify-center mx-auto ${heroPosition}`}
-            inputPad={`py-6 px-5 pr-48 h-12 lg:h-16 text-base lg:text-lg`}
+            inputPad={`py-6 px-5 pr-36 lg:pr-48 h-12 lg:h-16 text-base lg:text-lg`}
             placeholder={"Enter email"}
             borderColor={"border-ptGray"}
             endIcon={<button
@@ -72,7 +72,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section className="mt-52 px-10">
+        <section className="mt-52 px-5 lg:px-10">
           <AboutUs />
         </section>
 
@@ -131,11 +131,11 @@ export default function Home() {
         </section>
 
         {/* Featured On */}
-        <section className="py-36 px-20 bg-ptNeutral50 ">
+        <section className="py-36 px-10 lg:px-20 bg-ptNeutral50 ">
           <div>
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium leading-snug text-center lg:text-left">
               Featured
-              <i className="text-ptLightBlue400 not-italic">On ?</i>
+              <i className="text-ptLightBlue400 not-italic"> On ?</i>
             </h1>
             <p className="font-normal leading-10 text-lg md:text-xl lg:text-2xl text-ptNeutral600 mt-7 lg:mt-12 mb-6 text-center lg:text-left">
               Check out list of amazing brand we have worked with
