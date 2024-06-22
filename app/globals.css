@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to your styles.css file */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #05199a, #60b9ff, #5cb2fb, #001f47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
