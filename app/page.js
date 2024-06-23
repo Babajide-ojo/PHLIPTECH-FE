@@ -27,7 +27,7 @@ export default function Home() {
     <Layout>
       <main className="py-10">
         {/* Hero section */}
-        <section className="mb-20 px-10 w-full">
+        <section className="mb-20 px-5 md:px-10 w-full">
           <Image src="/star.png" alt="logo" className="hidden lg:flex" height={21.36} width={21.36} />
           <div className={`text-base flex justify-center pb-3 pt-4 px-5 font-normal
             leading-4 gap-2 rounded-3xl bg-ptLighterBlue w-fit mx-auto`}>
@@ -78,7 +78,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="mt-52 px-10">
+        <section className="mt-52 px-5 md:px-10">
           <Services />
         </section>
 
@@ -132,7 +132,7 @@ export default function Home() {
         </section>
 
         {/* Featured On */}
-        <section className="py-36 px-10 lg:px-20 bg-ptNeutral50 ">
+        <section className="py-36 px-5 md:px-10 lg:px-20 bg-ptNeutral50 ">
           <div>
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium leading-snug text-center lg:text-left">
               Featured
