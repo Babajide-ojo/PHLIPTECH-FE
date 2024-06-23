@@ -2,7 +2,7 @@ const { default: Footer } = require("./Footer");
 const { default: Navbar } = require("./Navbar");
 
 const Layout = ({ children }) => (
-  <div className="w-fit">
+  <div className="overflow-hidden">
     <Navbar />
     {children}
     <Footer />
