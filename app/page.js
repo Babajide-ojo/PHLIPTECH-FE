@@ -161,7 +161,6 @@ export default function Home() {
         </section>
 
         {/* Contact Us Section */}
-
         <section className="my-24 lg:px-20">
           <ContactUs />
         </section>
