@@ -45,6 +45,7 @@ export default function Home() {
           <Image src="/star.png" alt="star" className="absolute left-3/4 ml-36 hidden lg:flex" height={28.57} width={28.57} />
 
           <InputField
+            autoFocus={false}
             css={`relative my-16 justify-center mx-auto ${heroPosition}`}
             inputPad={`py-6 px-5 pr-36 lg:pr-48 h-12 lg:h-16 text-base lg:text-lg`}
             placeholder={"Enter email"}

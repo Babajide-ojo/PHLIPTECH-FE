@@ -18,6 +18,7 @@ const InputField = ({
   onWheel,
   ariaLabel,
   inputPad,
+  autoFocus,
 }) => {
   return (
     <div className="flex flex-col">
@@ -36,6 +37,7 @@ const InputField = ({
         )}
 
         <input
+          autoFocus={autoFocus}
           type={inputType ? inputType : "text"}
           id={name}
           name={name}

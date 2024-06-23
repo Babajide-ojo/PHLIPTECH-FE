@@ -5,7 +5,7 @@ export default function AboutUs() {
     const cardHeadClass = 'border-solid border-l-2 text-lg lg:text-2xl font-bold leading-8 pl-2 mb-6 lg:mb-4'
     const cardInfoClass = 'leading-8 font-normal text-base lg:text-lg w-fit'
     const abtPosClass = 'text-center lg:text-left'
-    const cardClass = 'mx-3 rounded-3xl gap-3 mb-7 md:mb-0 py-12 px-10 md:py-7 md:px-7 hover:scale-105'
+    const cardClass = 'mx-3 rounded-3xl gap-3 mb-7 md:mb-0 py-12 px-10 md:py-7 md:px-7 lg:hover:scale-105'
 
     return (
         <div className='lg:flex lg:justify-between'>
