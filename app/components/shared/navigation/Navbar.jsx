@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ContactUsModal from "../ContactUsModal";
+import { useState } from "react";
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -16,8 +18,9 @@ const RenderNavItems = ({ name, link }) => {
   return (
     <Link
       href={link}
-      className={`text-lg font-medium hover:text-ptLightBlue hidden lg:flex ${pathname === link ? "text-ptLightBlue" : "text-ptBlack"
-        }`}
+      className={`text-lg font-medium hover:text-ptLightBlue hidden lg:flex ${
+        pathname === link ? "text-ptLightBlue" : "text-ptBlack"
+      }`}
     >
       {name}
     </Link>
@@ -25,6 +28,7 @@ const RenderNavItems = ({ name, link }) => {
 };
 
 const Navbar = () => {
+  const [contactUsModalOpen, setContactUsModalOpen] = useState(false);
   return (
     <main className="py-5 px-10 flex justify-between items-center">
       {/* <div className="relative h-auto w-40"> */}
@@ -38,13 +42,21 @@ const Navbar = () => {
         ))}
       </div>
 
-      <button className="py-2 px-10 rounded-lg bg-ptLightBlue text-white hidden lg:flex">
+      <button
+        className="py-2 px-10 rounded-lg bg-ptLightBlue text-white hidden lg:flex"
+        onClick={() => setContactUsModalOpen(!contactUsModalOpen)}
+      >
         Contact Us
       </button>
 
       <div className="flex lg:hidden">
         <Image src="/menu_icon.svg" alt="logo" height={24} width={24} />
       </div>
+
+      <ContactUsModal
+        open={contactUsModalOpen}
+        onClose={setContactUsModalOpen}
+      />
     </main>
   );
 };

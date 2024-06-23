@@ -21,15 +21,11 @@ const InputField = ({
   autoFocus,
 }) => {
   return (
-    <div className="">
+    <div className="flex flex-col">
       {label && (
-        <label htmlFor={name} className="block text-gray-700 text-sm mb-2">
+        <label htmlFor={name} className="block text-gray-700 font-semibold">
           {label}
-          {required ? (
-            <span className="text-red-600 ml-1">*</span>
-          ) : (
-            <div className="mb-2 text-white">*</div>
-          )}
+          {required && <span className="text-red-600 ml-1">*</span>}
         </label>
       )}
 
@@ -46,9 +42,11 @@ const InputField = ({
           id={name}
           name={name}
           placeholder={placeholder}
-          className={`w-full h-10 ${inputPad ? inputPad : "px-3 py-2"}  rounded border ${bgColor && bgColor
-            } ${borderColor} ${required ? "border-gray-300" : "border-gray-300"
-            } focus:outline-none focus:${borderColor} ${startIcon ? "pl-8" : ""}`}
+          className={`w-full h-10 ${
+            inputPad ? inputPad : "p-4 py-2"
+          }  rounded-md border-2 ${bgColor && bgColor} ${borderColor} ${
+            required ? "border-gray-300" : "border-gray-300"
+          } focus:outline-none focus:${borderColor} ${startIcon ? "pl-8" : ""}`}
           required={required}
           aria-label={ariaLabel}
           onChange={onChange}
