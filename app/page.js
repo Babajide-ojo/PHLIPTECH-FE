@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-center mx-auto mt-28">
+              <div className="justify-center mx-auto mt-28">
                 <Image src="/World-img.png" alt="Earth" className="" height={466} width={501} />
               </div>
             </div>
