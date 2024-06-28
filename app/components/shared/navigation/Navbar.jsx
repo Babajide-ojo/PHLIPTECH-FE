@@ -39,7 +39,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <main className="py-5 px-5 sm:px-10 flex justify-between items-center relative">
+    <main className="py-5 px-5 sm:px-10 flex justify-between items-center relative z-50">
       {/* <div className="relative h-auto w-40"> */}
       <Image src="/logo.png" alt="logo" height={70} width={160} />
       {/* </div> */}
