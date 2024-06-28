@@ -8,7 +8,10 @@ export default function AboutUs() {
     const cardClass = 'mx-3 rounded-3xl gap-3 mb-7 md:mb-0 py-12 px-10 md:py-7 md:px-7 lg:hover:scale-105'
 
     return (
-        <div className='lg:flex lg:justify-between'>
+        <div className='lg:flex lg:justify-between'   data-aos="fade-right"
+        data-aos-duration="3000"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <div className='mt-40'>
                 <p className={`font-medium text-lg lg:text-2xl leading-8 ${abtPosClass}`}>Who we <i className='text-ptLightBlue'>are ?</i></p>
                 <h1 className={`font-medium text-2xl lg:text-4xl leading-10 text-ptDarkBg900 py-6 mb-3 ${abtPosClass}`}>About Us</h1>

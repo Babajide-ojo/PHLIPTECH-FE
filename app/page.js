@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Layout from "./components/shared/navigation/Layout";
 // import Layout from "../components/shared/navigation/Layout";
@@ -10,7 +11,10 @@ import AboutUs from "./components/pages/AboutUs";
 import Services from "./components/pages/Services";
 import Testimonials from "./components/pages/Testimonals";
 import ContactUs from "./components/pages/ContactUs";
+import { useEffect } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const spaceGrotesk = Space_Grotesk({ weight: "400", subsets: ["latin"] });
 
@@ -20,7 +24,9 @@ export default function Home() {
   });
 
   const heroPosition = "sm:w-4/5 lg:w-1/2";
-
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <Layout>
       <main className="py-16">
@@ -33,12 +39,15 @@ export default function Home() {
             width={21.36}
           />
           <div
-            className={`text-base flex justify-center pb-3 pt-4 px-5 font-normal
+            className={` text-base flex justify-center pb-3 pt-4 px-5 font-normal
             leading-4 gap-2 rounded-3xl bg-ptLighterBlue w-fit mx-auto`}
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-cubic"
           >
-            <p className={`text-ptBlue font-normal text-[0.65rem] sm:text-xs lg:text-base`}>
+            <div className={`text-ptBlue font-normal text-[0.65rem] sm:text-xs lg:text-base`}>
               Hello There, we are Phlip Technologies
-            </p>
+            </div>
             <Image
               src="/wave-icon.svg"
               alt="wave"
