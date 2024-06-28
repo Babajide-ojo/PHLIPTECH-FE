@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ContactUsModal from "../ContactUsModal";
 import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -50,7 +51,7 @@ const Navbar = () => {
       </button>
 
       <div className="flex lg:hidden">
-        <Image src="/menu_icon.svg" alt="logo" height={24} width={24} />
+        <RxHamburgerMenu size={20} />
       </div>
 
       <ContactUsModal

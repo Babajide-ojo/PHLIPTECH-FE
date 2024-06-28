@@ -37,51 +37,56 @@ const Footer = () => {
   const [subscribeEmail, setSubscribeEmail] = useState("");
   return (
     <main className="w-full bg-ptDarkBg800 text-white mt-56">
-      <div className="p-20">
-        <div className="flex justify-between items-center">
+      <div className="p-5 sm:p-10 md:p-20">
+        <div className="flex justify-between items-center gap-5 flex-wrap mt-10">
           <Image src="/logo2.png" alt="logo" height={100} width={200} />
-          <p className={`max-w-xl text-2xl`}>
+          <p className={`max-w-xl text-sm sm:text-lg md:text-2xl`}>
             Let&apos;s explore available opportunities or create bespoke
             solutions to serve your business needs.
           </p>
-          <button className="bg-white text-ptDarkBlue py-4 px-6 rounded-full flex items-center gap-3 text-sm font-semibold">
-            Contact us <LuArrowRightCircle size={20} />
-          </button>
+          <div className="w-full lg:w-fit">
+            <button className="bg-white text-ptDarkBlue py-4 px-6 rounded-full flex items-center gap-3 text-sm font-semibold mx-auto">
+              Contact us <LuArrowRightCircle size={20} />
+            </button>
+          </div>
         </div>
         <p className="mt-20 mb-10 font-semibold text-lg">
           Ready to connect with us?
         </p>
 
-        <div className="flex items-center justify-between">
-          <div className="flex gap-10">
+        <div className="md:flex items-center justify-between">
+          <div className="flex justify-between gap-10">
             {footerLinks.map((item) => (
               <div className="flex flex-col gap-3 text-sm" key={item.header}>
                 <p
-                  className={`${work_sans.className} font-semibold ${item.header === "Social" && "text-end"
-                    }`}
+                  className={`${work_sans.className} font-semibold ${
+                    item.header === "Social" && "text-end"
+                  }`}
                 >
                   {item.header}
                 </p>
                 <Link
                   href={item.fristLink}
-                  className={`font-light ${item.header === "Social" && "text-end underline"
-                    }`}
+                  className={`font-light ${
+                    item.header === "Social" && "text-end underline"
+                  }`}
                 >
                   {item.first}
                 </Link>
                 <Link
                   href={item.secondLink}
-                  className={`font-light ${item.header === "Social" && "text-end underline"
-                    }`}
+                  className={`font-light ${
+                    item.header === "Social" && "text-end underline"
+                  }`}
                 >
                   {item.second}
                 </Link>
               </div>
             ))}
           </div>
-          <div>
+          <div className="mt-20 md:mt-0">
             <p className="text-sm font-medium">Subscribe to our Newsletter</p>
-            <div className="my-3 w-[20rem]">
+            <div className="my-3 md:w-[20rem]">
               <InputField
                 value={subscribeEmail}
                 placeholder={"your@email.com"}
@@ -90,7 +95,9 @@ const Footer = () => {
                 onChange={(e) => setSubscribeEmail(e.target.value)}
               />
             </div>
-            <button className="p-2 w-full text-sm font-medium text-ptDarkBlue rounded-md bg-white">Subscribe</button>
+            <button className="p-2 w-full text-sm font-medium text-ptDarkBlue rounded-md bg-white">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
