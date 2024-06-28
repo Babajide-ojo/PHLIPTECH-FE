@@ -14,7 +14,7 @@ export default function Services() {
                 <h1 className='font-medium text-2xl lg:text-4xl text-center lg:text-left leading-10 text-ptDarkBg900 py-6 mb-3'>Our Services</h1>
             </div>
 
-            <div className='lg:px-10'>
+            <div className=''>
                 <div className="md:flex md:justify-between">
                     <div className={`${cardClass}`}>
                         <div className='flex justify-center bg-ptRed600 py-7 px-3 m-7 w-32 h-32 mx-auto rounded-3xl'>

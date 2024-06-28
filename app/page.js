@@ -11,10 +11,7 @@ import Services from "./components/pages/Services";
 import Testimonials from "./components/pages/Testimonals";
 import ContactUs from "./components/pages/ContactUs";
 
-const almendra_Display = Almendra_Display({
-  weight: "400",
-  subsets: ["latin"],
-});
+
 const spaceGrotesk = Space_Grotesk({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
@@ -22,14 +19,12 @@ export default function Home() {
     bookCallEmail: "",
   });
 
-  const { bookCallEmail } = state;
   const heroPosition = "sm:w-4/5 lg:w-1/2";
 
   return (
     <Layout>
-      <main className="py-10">
-        {/* Hero section */}
-        <section className="mb-20 px-5 sm:px-10 w-full">
+      <main className="py-16">
+        <section className="mb-20 px-5 sm:px-10 w-full py-10">
           <Image
             src="/star.png"
             alt="logo"
@@ -42,7 +37,7 @@ export default function Home() {
             leading-4 gap-2 rounded-3xl bg-ptLighterBlue w-fit mx-auto`}
           >
             <p className={`text-ptBlue font-normal text-[0.65rem] sm:text-xs lg:text-base`}>
-              Hello There, we are Philip Technologies
+              Hello There, we are Phlip Technologies
             </p>
             <Image
               src="/wave-icon.svg"
@@ -76,39 +71,11 @@ export default function Home() {
             width={28.57}
           />
 
-          <InputField
-            autoFocus={false}
-            css={`relative my-16 justify-center mx-auto ${heroPosition}`}
-            inputPad={`py-6 px-5 pr-36 lg:pr-48 h-12 lg:h-16 text-base lg:text-lg`}
-            placeholder={"Enter email"}
-            borderColor={"border-ptGray"}
-            endIcon={
-              <button className="py-0.5 px-6 lg:py-3 lg:px-10 gap-2.5 rounded-lg bg-ptLightBlue hover:bg-ptLightBlue900 text-white leading-8 text-base lg:text-lg">
-                Book a call
-              </button>
-            }
-            onChange={(e) =>
-              setState((draft) => {
-                draft.bookCallEmail = e.target.value;
-              })
-            }
-          />
-
-          {/* <p className="flex justify-center font-medium text-base lg:text-2xl leading-8">
-            Brands that <i className="text-ptLightBlue ml-1"> trust us</i>
-          </p>
-
-          <div className="flex justify-center mt-5">
-            <div className="flex flex-col md:flex-row justify-between gap-10">
-              <Image src="/swiftWingsLogo.webp" alt="swift wings" className="" height={62.25} width={195.78} />
-              <Image src="/seconwalletLogo.webp" alt="second wallet" className="" height={52.4} width={141.09} />
-              <Image src="/godaddy-brand.png" alt="godaddy" className="" height={38.83} width={193.77} />
-            </div>
-          </div> */}
+  
         </section>
 
         {/* About Section */}
-        <section className="mt-52 px-5 lg:px-10">
+        <section className="mt-24 px-5 lg:px-10">
           <AboutUs />
         </section>
 
@@ -209,19 +176,19 @@ export default function Home() {
         </section>
 
         {/* Featured On */}
-        <section className="py-36 px-5 md:px-10 lg:px-20 bg-ptNeutral50 ">
+        <section className="py-36 px-5 md:px-10 lg:px-20 bg-ptNeutral50 text-center items-center">
           <div>
-            <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium leading-snug text-center lg:text-left">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium leading-snug text-center">
               Featured
               <i className="text-ptLightBlue400 not-italic"> On ?</i>
             </h1>
-            <p className="font-normal leading-10 text-lg md:text-xl lg:text-2xl text-ptNeutral600 mt-7 lg:mt-12 mb-6 text-center lg:text-left">
+            <p className="font-normal leading-10 text-lg md:text-xl lg:text-2xl text-ptNeutral600 mt-7 lg:mt-12 mb-6 text-center">
               Check out list of amazing brand we have worked with
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="flex flex-col md:flex-row justify-between gap-10">
+          <div className="flex justify-center mt-8">
+            <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20">
               {/* <Image src="/givadan-brand.png" alt="Givadan" className="" height={62.25} width={195.78} />
               <Image src="/certina-brand.png" alt="Certina" className="" height={59.09} width={132.68} />
               <Image src="/drom-brand.png" alt="Drom" className="" height={52.4} width={141.09} />
