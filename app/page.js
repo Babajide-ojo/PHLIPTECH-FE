@@ -231,7 +231,7 @@ export default function Home() {
               <Image
                 src="/swiftWingsLogo.webp"
                 alt="swift wings"
-                className=""
+                className="-ml-2"
                 height={62.25}
                 width={195.78}
               />
