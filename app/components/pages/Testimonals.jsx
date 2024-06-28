@@ -28,23 +28,22 @@ export default function Testimonials() {
                 <div className="md:flex md:justify-between">
                     <div className={`p-4 bg-ptWhite50 ${cardClass} mb-10 md:mb-12`}>
                         <div className="flex justify-between">
-                            <div className={`${phraseClass}`}>“The best hiring app ever”</div>
+                        <div className={`${phraseClass}`}>“Standard Processes”</div>
                             <div>⭐⭐⭐⭐⭐</div>
                         </div>
 
                         <p className={`${commentClass}`}>
-                            If you are looking for a reliable and easy-to-use app, look no further!
-                            This app has everything you need, and it is made my life so much easier
+                            If you are looking for a reliable software service provider, choose Phliptech, their process are exceptinally standard.
                         </p>
 
                         <div className="flex justify-between mt-10 mb-3">
                             <div className='flex '>
-                                <Image src="/lady-1.png" alt="Icon" className="rounded-e-full -mt-3" height={40} width={40} />
-                                <p className={`${plusJakarta.className} ${commentName}`}>Sophie Moore</p>
+                            
+                                <p className={`${plusJakarta.className} ${commentName}`}>Ini Etuk</p>
                             </div>
 
                             <div className={`${posClass}`}>
-                                Head of Marketing
+                                CTO, Second Wallet
                             </div>
                         </div>
                     </div>
@@ -56,75 +55,22 @@ export default function Testimonials() {
                         </div>
 
                         <p className={`${commentClass}`}>
-                            I hired two VA’s on frowork two months ago. Impressed is an understatement! Both Froworker have delivered
-                            exceptionally well. They are creative and understand the needs of the business without any input from me.
-                            I would highly recommend frowork. It’s better than any freelance website I have used in the past.
+            Since we onboarded Phliptech as our technology service provider, all our processes has been seamless
                         </p>
 
                         <div className="flex justify-between mt-10 mb-3">
                             <div className='flex '>
-                                <Image src="/lady-1.png" alt="Icon" className="rounded-e-full -mt-3" height={40} width={40} />
-                                <p className={`${plusJakarta.className} ${commentName}`}>Johana Smith</p>
+                               
+                                <p className={`${plusJakarta.className} ${commentName}`}>Omole Daniel</p>
                             </div>
 
                             <div className={`${posClass}`}>
-                                Founder of a cool SaaS
+                                Head of Operations, Swiftwings
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Row 2 */}
-                <div className="md:flex md:justify-between mt-10">
-                    <div className={`p-4 bg-ptWhite50 ${cardClass} mb-10 md:mb-6`}>
-                        <div className="flex justify-between">
-                            <div className={`${phraseClass}`}>“Better than the rest”</div>
-                            <div>⭐⭐⭐⭐⭐</div>
-                        </div>
-
-                        <p className={`${commentClass}`}>
-                            I got to know frowork on linkedin, i thought the signup process was going to take longer than necessary
-                            like other job apps but in 2mins i registered successfully, I applied for gig which i got, the fun part
-                            was the payment was so swift no glitches no delays. Amazing product
-                        </p>
-
-                        <div className="flex justify-between mt-10 mb-3">
-                            <div className='flex '>
-                                <Image src="/lady-2.png" alt="Icon" className="rounded-e-full -mt-3" height={40} width={40} />
-                                <p className={`${plusJakarta.className} ${commentName}`}>Annie Devy</p>
-                            </div>
-
-                            <div className={`${posClass}`}>
-                                Designer
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={`p-4 bg-ptWhite50 ${cardClass}`}>
-                        <div className="flex justify-between">
-                            <div className={`${phraseClass}`}>“No more anxiety”</div>
-                            <div>⭐⭐⭐⭐⭐</div>
-                        </div>
-
-                        <p className={`${commentClass}`}>
-                            My experience on frowork has been so exceptional. Working with a froworker has taken away my anxiety about
-                            handling my social media platforms and has given me the peace of mind i need to focus on my core business.
-                            I will always recommend frowork as a platform for business owners like me seeking to engage enterprising
-                            individuals
-                        </p>
-
-                        <div className="flex justify-between mt-10 mb-3">
-                            <div className='flex '>
-                                <Image src="/guy-1.png" alt="Icon" className="rounded-e-full -mt-3" height={40} width={40} />
-                                <p className={`${plusJakarta.className} ${commentName}`}>Michel O Neil</p>
-                            </div>
-
-                            <div className={`${posClass}`}>
-                                Head of Sales
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     )

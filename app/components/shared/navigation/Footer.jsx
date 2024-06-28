@@ -40,18 +40,20 @@ const Footer = () => {
       <div className="p-5 sm:p-10 md:p-20">
         <div className="flex justify-between items-center gap-5 flex-wrap mt-10">
           <Image src="/logo2.png" alt="logo" height={100} width={200} />
-          <p className={`max-w-xl text-sm sm:text-lg md:text-2xl`}>
+          <p className={`max-w-xl text-sm sm:text-lg md:text-2xl text-end`}>
             Let&apos;s explore available opportunities or create bespoke
             solutions to serve your business needs.
           </p>
-          <div className="w-full lg:w-fit">
+          {/* <div className="w-full lg:w-fit">
             <button className="bg-white text-ptDarkBlue py-4 px-6 rounded-full flex items-center gap-3 text-sm font-semibold mx-auto">
               Contact us <LuArrowRightCircle size={20} />
             </button>
-          </div>
+          </div> */}
         </div>
         <p className="mt-20 mb-10 font-semibold text-lg">
-          Ready to connect with us?
+          Ready to connect with us? send us a mail 
+          <br></br>
+         <p className="underline"> info@phliptech.com</p>
         </p>
 
         <div className="md:flex items-center justify-between">
@@ -107,7 +109,7 @@ const Footer = () => {
       >
         &copy;{" "}
         <span className={`${space_grotesk.className} text-xs`}>
-          2024. Philip Technologies
+          2024, PhilpTech
         </span>
       </div>
     </main>
