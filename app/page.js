@@ -94,7 +94,10 @@ export default function Home() {
         </section>
 
         {/* Our Milestone */}
-        <section className="mt-52">
+        <section className="mt-52" data-aos="fade-left"
+        data-aos-duration="2000"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <div className="bg-ptDarkBg800 w-full py-32 lg:py-40 px-10">
             <p className="flex gap-2 justify-center lg:justify-normal">
               <span className="text-2xl text-ptLightBlue400 font-medium leading-8">
@@ -185,7 +188,10 @@ export default function Home() {
         </section>
 
         {/* Featured On */}
-        <section className="py-36 px-5 md:px-10 lg:px-20 bg-ptNeutral50 text-center items-center">
+        <section className="py-36 px-5 md:px-10 lg:px-20 bg-ptNeutral50 text-center items-center" data-aos="fade-right"
+        data-aos-duration="2000"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <div>
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium leading-snug text-center">
               Featured
@@ -230,12 +236,18 @@ export default function Home() {
         </section>
 
         {/* Testimonal Section */}
-        <section className="mt-32 md:mt-16 px-8 md:px-12 lg:px-32">
+        <section className="mt-32 md:mt-16 px-8 md:px-12 lg:px-32" data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <Testimonials />
         </section>
 
         {/* Contact Us Section */}
-        <section className="my-24 lg:px-20">
+        <section className="my-24 lg:px-20" data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <ContactUs />
         </section>
       </main>

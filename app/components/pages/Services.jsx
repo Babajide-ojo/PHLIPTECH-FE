@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <div
     data-aos="fade-left"
-    data-aos-duration="3000"
+    data-aos-duration="2000"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine"
     >

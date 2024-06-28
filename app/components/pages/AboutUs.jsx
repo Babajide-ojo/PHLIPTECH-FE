@@ -9,7 +9,7 @@ export default function AboutUs() {
 
     return (
         <div className='lg:flex lg:justify-between'   data-aos="fade-right"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
             <div className='mt-40'>
