@@ -109,7 +109,7 @@ const Footer = () => {
       >
         &copy;{" "}
         <span className={`${space_grotesk.className} text-xs`}>
-          2024. Philip Technologies
+          2024, PhilpTech
         </span>
       </div>
     </main>
