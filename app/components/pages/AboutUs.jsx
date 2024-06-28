@@ -16,7 +16,7 @@ export default function AboutUs() {
                 <p className={`font-medium text-lg lg:text-2xl leading-8 ${abtPosClass}`}>Who we <i className='text-ptLightBlue'>are ?</i></p>
                 <h1 className={`font-medium text-2xl lg:text-4xl leading-10 text-ptDarkBg900 py-6 mb-3 ${abtPosClass}`}>About Us</h1>
                 <p className={`text-base lg:text-2xl leading-8 lg:leading-10 font-normal text-ptNeutral600 ${abtPosClass}`}>
-                    At Philp Tech, our core values shape all our actions and decisions. We prioritize innovation
+                    At Philp Tech, our core values shape all our actions and decisions. We prioritize innovation,
                     customer satisfaction, excellence, and integrity, ensuring that every step we take aligns with
                     our commitment to these principles.
                 </p>
@@ -37,7 +37,7 @@ export default function AboutUs() {
                             Intergrity
                         </h3>
                         <p className={`${cardInfoClass} text-ptDarkBlue`}>
-                            We uphold the highest standardsof honesty, transparency, and ethical behavior in all our
+                            We uphold the highest standards of honesty, transparency, and ethical behavior in all our
                             interactions, building trust and credibility with our clients partners, and stakeholders.
                         </p>
                     </div>

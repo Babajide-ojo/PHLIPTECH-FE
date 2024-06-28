@@ -12,10 +12,10 @@ export default function Services() {
 
   return (
     <div
-    data-aos="fade-left"
-    data-aos-duration="2000"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"
+      data-aos="fade-left"
+      data-aos-duration="2000"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
     >
       <div>
         <p className="font-medium text-lg lg:text-2xl text-center lg:text-left leading-8">
@@ -56,10 +56,10 @@ export default function Services() {
               />
             </div>
             <h4 className={`${cardHead}`}>Cloud Computing</h4>
-            <p className={`${cardText}`}>
-              We help companies and entrepreneurs plan and make use of modern
-              day technologies to build innovative solutions
-            </p>
+<p className={`${cardText}`}>
+  We assist companies and entrepreneurs in harnessing modern technologies to design and implement innovative solutions that leverage cloud computing.
+</p>
+
           </div>
         </div>
 
@@ -76,8 +76,9 @@ export default function Services() {
             </div>
             <h4 className={`${cardHead}`}>Mobile App Development</h4>
             <p className={`${cardText}`}>
-              We help companies and entrepreneurs plan and make use of modern
-              day technologies to build innovative solutions
+              We collaborate with companies and entrepreneurs to harness
+              contemporary technologies, enabling the creation of impactful and
+              user-centric mobile applications.
             </p>
           </div>
 
@@ -92,12 +93,12 @@ export default function Services() {
               />
             </div>
             <h4 className={`${cardHead}`}>
-              Manual Testing, QA, Test Automation
-            </h4>
-            <p className={`${cardText}`}>
-              We help companies and entrepreneurs plan and make use of modern
-              day technologies to build innovative solutions
-            </p>
+  Quality Assurance and Test Automation
+</h4>
+<p className={`${cardText}`}>
+  We collaborate with companies and entrepreneurs to implement effective QA practices and leverage modern technologies for automated testing. Our goal is to ensure robust, high-quality solutions that meet industry standards and user expectations.
+</p>
+
           </div>
         </div>
       </div>

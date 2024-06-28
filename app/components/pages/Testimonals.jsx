@@ -33,7 +33,7 @@ export default function Testimonials() {
                         </div>
 
                         <p className={`${commentClass}`}>
-                            If you are looking for a reliable software service provider, choose Phliptech, their process are exceptinally standard.
+                            If you are looking for a reliable software service provider, choose PhlipTech, their process are exceptinally standard.
                         </p>
 
                         <div className="flex justify-between mt-10 mb-3">
@@ -55,7 +55,7 @@ export default function Testimonials() {
                         </div>
 
                         <p className={`${commentClass}`}>
-            Since we onboarded Phliptech as our technology service provider, all our processes has been seamless
+            Since we onboarded PhlipTech as our technology service provider, all our processes has been seamless
                         </p>
 
                         <div className="flex justify-between mt-10 mb-3">
