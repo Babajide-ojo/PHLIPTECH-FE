@@ -5,7 +5,7 @@ const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "PhlipTech",
-  description: "PhlipTech",
+  description: "Redefining Technology",
 };
 
 export default function RootLayout({ children }) {
