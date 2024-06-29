@@ -36,7 +36,7 @@ const footerLinks = [
 const Footer = () => {
   const [subscribeEmail, setSubscribeEmail] = useState("");
   return (
-    <main className="w-full bg-ptDarkBg800 text-white mt-56">
+    <main className="w-full bg-ptDarkBg800 text-white">
       <div className="p-5 sm:p-10 md:p-20">
         <div className="flex justify-between items-center gap-5 flex-wrap mt-10">
           <Image src="/logo2.png" alt="logo" height={100} width={200} />
